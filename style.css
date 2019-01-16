@@ -1,0 +1,286 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+
+/* Шапка */
+
+.center {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+header{
+	height: 187px;
+	background: url(images/header-wrapper-bg.png) left top;
+	display: flex;
+	
+}
+
+header .center{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo{
+	display: block;
+	width: 221px;
+	height: 110px;
+	background: url(images/logo-bg.png) no-repeat left top;
+	line-height: 110px;
+	text-align: center;
+	text-decoration: none;
+	font-family: 'Cookie', cursive;
+	font-size: 60px;
+	font-weight: 400;
+	color: #FFFFFF;
+}
+
+header ul{
+	display: flex;
+	font-family: 'Arvo', serif;
+	font-size: 16px;
+	list-style-type: none;
+
+}
+
+nav li{
+	height: 30px;
+	margin-right: 40px;
+
+}
+
+nav li:last-child{
+	margin-right: 135px;
+}
+
+nav a{
+	color: #fff;
+	line-height: 30px;
+	padding: 5px 5px;
+
+}
+
+.active{
+	background: #881D1D;
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.active a{
+	padding: 5px 15px;
+}
+
+/* Баннер */
+
+
+.banner {
+	background: url(images/banner-wrapper-bg.png) repeat;
+	padding: 32px 0;
+}
+
+.the-banner {
+	width: 960px;
+	height: 278px;
+	background: url(images/banner-image.jpg);
+	margin-left: 20px;
+	border-radius: 10px;
+	background-size: cover;
+	text-align: center;
+	display: flex;
+}
+
+.the-banner h2 {
+	width: 100%;
+	align-self: flex-end;
+	background: url(images/banner-caption-bg.png) left top no-repeat;
+	font-size: 35px;
+	padding: 17px 0;
+	color: white;
+	font-family: 'Cookie', cursive;
+	border-radius: 10px;
+	font-weight: normal;
+}
+
+.wrapper {
+	padding: 30px 0;
+	background: url(images/page-wrapper-bg.png);
+	overflow: hidden;
+}
+
+aside {
+	width: 300px;
+	float: right;
+	background: url(images/sidebar-bg-02.png);
+	margin-right: 30px;
+	border-radius: 10px;
+}
+
+.border-top {
+	background: url(images/sidebar-bg-01.png);
+	height: 15px;
+}
+
+.border-bottom {
+	background: url(images/sidebar-bg-03.png);
+	height: 15px;
+}
+
+.content-box {
+	margin: 20px 0;
+}
+
+.posted h2 {
+	margin-left: 30px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.posted {
+	background: url(images/sidebar-title-bg.png);
+	width: 330px;
+	height: 38px;
+	line-height: 35px;
+}
+
+.content-box p {
+	margin: 20px 40px 20px 30px;
+	color: #E1C9C4;
+	line-height: 25px;
+	font-size: 15px;
+}
+
+.content-box ul {
+	margin: 20px 30px 20px 30px;
+	
+	font-size: 15px;
+	list-style-type: none;
+	line-height: 30px;
+}
+
+.content-box ul li:not(:last-child) {
+	border-bottom: 1px solid black;
+}
+
+.content-box ul li:not(:first-child) {
+	padding: 4px 0;
+}
+
+main {
+	background: white;
+	margin-right: 370px;
+	padding: 30px 0;
+}
+
+.content {
+	margin: 35px 30px;
+}
+
+.content h1 {
+	color: #4E2B22;
+}
+
+
+.content img {
+	margin: 20px 0px 30px 0px;
+	border-radius: 10px;
+}
+
+.content p {
+	line-height: 25px;
+	text-align: justify;
+}
+
+.main-bottom-panel {
+	height: 66px;
+	background: url(images/posted-meta-bg.png);
+	margin: 0px 30px;
+	display: flex;
+	line-height: 66px;
+	justify-content: space-between;
+}
+
+.main-bottom-panel span{
+	margin: 0 25px;
+	color: #572F26;
+	font-size: 18px;
+}
+
+.main-bottom-panel a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.main-bottom-panel a:hover {
+	text-decoration: none;
+}
+
+.footer-top{
+	height: 265px;
+	background: url(images/footer-content-bg-02.png);
+}
+
+.footer-box {
+	display: flex;
+}
+
+.footer-box div {
+	box-sizing: border-box;
+	height: 190px;
+	width: 300px;
+	background: #582E26;
+	margin-top: 40px;
+	border: 1px solid #48261E;
+	border-radius: 10px;
+	box-shadow: inset 1px 1px 5px 0px #48261E, inset -1px -1px 5px 0px #48261E;
+	padding: 35px 20px 30px 30px;
+}
+
+.footer-box div:not(:last-child) {
+	margin-right: 35px;
+}
+
+.footer-box div h3 {
+	color: white;
+	font-size: 17px;
+	margin-bottom: 25px;
+	font-family: 'Arvo', serif;
+}
+
+.footer-box div p {
+	font-size: 15px;
+	line-height: 20px;
+	color: #E1C9C4;
+}
+
+.footer-bottom {
+	height: 155px;
+	background: url(images/footer-bg.png);
+}
+
+.footer-bottom p {
+	padding-top: 40px;
+	text-align: center;
+	text-shadow: 1px 1px 2px rgba(39, 20, 17, 1);
+	color: #784F45;
+}
+
+.footer-bottom a {
+	text-decoration: underline;
+	color: inherit;
+}
+
+.footer-bottom a:hover {
+	text-decoration: none;
+}
+
